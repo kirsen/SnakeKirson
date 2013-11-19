@@ -10,10 +10,18 @@ import java.util.List;
  * Time: 15:03
  * To change this template use File | Settings | File Templates.
  */
-public class Snake {
+public class Snake extends GameObject implements IGameObject {
     protected Items _items = new Items();
 
     public Snake() {
 
     };
+
+    public void Update() {
+
+    }
+
+    public void Draw() {
+
+    }
 }

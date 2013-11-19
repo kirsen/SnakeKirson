@@ -15,4 +15,16 @@ public class Foods {
     public Foods() {
 
     };
+
+    public void Update() {
+        for(Food food : this._foods) {
+            food.Update();
+        }
+    }
+
+    public void Draw() {
+        for(Food food : this._foods) {
+            food.Draw();
+        }
+    }
 }

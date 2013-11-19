@@ -7,5 +7,12 @@ package com.example.snakeKirson;
  * Time: 15:04
  * To change this template use File | Settings | File Templates.
  */
-public class Food {
+public class Food extends GameObject implements IGameObject {
+    public void Update() {
+
+    }
+
+    public void Draw() {
+
+    }
 }
