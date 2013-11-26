@@ -1,5 +1,9 @@
 package com.example.snakeKirson;
 
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Bitmap;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kira
@@ -7,12 +11,20 @@ package com.example.snakeKirson;
  * Time: 15:04
  * To change this template use File | Settings | File Templates.
  */
-public class Food extends GameObject implements IGameObject {
+
+public class Food extends GameObject {
+
+    protected GameView _gameView;
+    protected int _x=0;
+    protected int _y=0;
+
+    protected  Bitmap _bmp;
+
     public void Update() {
 
     }
 
-    public void Draw() {
+    public void Draw(Canvas canvas) {
 
     }
 }

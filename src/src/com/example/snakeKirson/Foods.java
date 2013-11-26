@@ -1,5 +1,7 @@
 package com.example.snakeKirson;
 
+import android.graphics.Canvas;
+
 import java.util.*;
 
 /**
@@ -22,9 +24,17 @@ public class Foods {
         }
     }
 
-    public void Draw() {
+    public void Draw(Canvas canvas) {
         for(Food food : this._foods) {
-            food.Draw();
+            food.Draw(canvas);
         }
+    }
+
+    public void AddFood(Food food) {
+        this._foods.add(food);
+    }
+
+    public void RemoveFood(Food food) {
+        this._foods.remove(food);
     }
 }

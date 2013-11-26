@@ -1,5 +1,7 @@
 package com.example.snakeKirson;
 
+import android.graphics.Canvas;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kira
@@ -10,11 +12,11 @@ package com.example.snakeKirson;
 
 interface IGameObject {
     public void Update();
-    public void Draw();
+    public void Draw(Canvas canvas);
 }
 
-public class GameObject {
-    //public void Update() {};
+public class GameObject implements IGameObject {
+    public void Update() {};
 
-    //public void Draw() {};
+    public void Draw(Canvas canvas) {};
 }

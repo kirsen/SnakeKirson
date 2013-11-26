@@ -1,52 +1,41 @@
 package com.example.snakeKirson;
 
-import android.app.Activity;
-import android.os.Bundle;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 15.10.13
- * Time: 15:00
+ * Date: 26.11.13
+ * Time: 12:06
  * To change this template use File | Settings | File Templates.
  */
+public class Game {
+    private GameView _gameView;
 
-public class Game extends Activity {
+    private Snake _snake;
+    private Foods _foods;
+    private Bitmap mBitmap;
 
-//    protected Snake _snake = new Snake();
-//    protected Foods _foods = new Foods();
-//
-//    protected Loop _loop = new Loop();
-//
-//    public Game() {
-//        Action action = new Action();
-//        action.SetSnake(this._snake);
-//        action.SetFoods(this._foods);
-//
-//        this._loop.SetAction(action);
-//    }
-//
-//    public void Start() {
-//        this._loop.Start();
-//    }
-//
-//    public void Stop() {
-//        this._loop.Stop();
-//    }
+    public Game(GameView gameView, Bitmap mBitmap) {
+        this._gameView = gameView;
+        this.mBitmap= mBitmap;
+    }
 
-    /**
-     * Called when the activity is first created.
-     */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.game);
+    public void Start() {
+        Action scene = new Action();
 
-        //Game s = new Game();
+        this._foods = new Foods();
+
+
+        this._foods.AddFood(new Apple(this._gameView, this.mBitmap));
+        scene.SetFoods(this._foods);
+
+        this._gameView.SetAction(scene);
 
     }
 
+    public void Stop() {
+        this._gameView.Stop();
+    }
 }

@@ -2,6 +2,8 @@ package com.example.snakeKirson;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,22 +12,22 @@ import android.widget.TextView;
 
 public class MyActivity extends Activity {
 
-    private Game _currentGame = new Game();
+    private Game _game;
 
     public void Start_Click(View v) {
-        //this._currentGame.Start();
-//        TextView edtext;
-//        edtext = (TextView)findViewById(R.id.textView);
-//        edtext.setText("WIEHFJILWEF");
 
-        Intent i = new Intent(this, Game.class);
-        startActivity(i);
+        GameView gameView = new GameView(this);
 
+        Bitmap mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+
+        setContentView(gameView);
+        this._game = new Game(gameView, mBitmap);
+        this._game.Start();
 
     }
 
     public void Exit_Click(View v) {
-        //this._currentGame.Stop();
+        this._game.Stop();
         this.finish();
     }
 
@@ -37,14 +39,6 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        //Game s = new Game();
-
     }
 
-    /** Start a new game with the given difficulty level */
-    private void startGame(int i) {
-        //Intent intent = new Intent(this,Game.class);
-        //intent.putExtra("",i);
-        //startActivity(intent);
-    }
 }

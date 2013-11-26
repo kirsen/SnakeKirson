@@ -2,6 +2,7 @@ package com.example.snakeKirson;
 
 import java.util.ArrayList;
 import java.util.List;
+import android.graphics.Canvas;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,9 +29,9 @@ public class Action implements IGameObject {
         this._snake.Update();
     }
 
-    public void Draw() {
-        this._foods.Draw();
-        this._snake.Draw();
+    public void Draw(Canvas canvas) {
+        this._foods.Draw(canvas);
+        //this._snake.Draw(canvas);
     }
 
 }

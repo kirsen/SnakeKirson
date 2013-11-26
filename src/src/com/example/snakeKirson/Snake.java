@@ -1,5 +1,7 @@
 package com.example.snakeKirson;
 
+import android.graphics.Canvas;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +23,7 @@ public class Snake extends GameObject implements IGameObject {
 
     }
 
-    public void Draw() {
+    public void Draw(Canvas canvas) {
 
     }
 }
