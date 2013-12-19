@@ -20,11 +20,4 @@ public class Food extends GameObject {
 
     protected  Bitmap _bmp;
 
-    public void Update() {
-
-    }
-
-    public void Draw(Canvas canvas) {
-
-    }
 }

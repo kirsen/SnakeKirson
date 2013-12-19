@@ -1,6 +1,7 @@
 package com.example.snakeKirson;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -16,4 +17,16 @@ public class Items {
     public Items() {
 
     };
+
+    public void Add(Item item) {
+        this._items.add(item);
+    }
+
+    public void Remove(Item item) {
+        this._items.remove(item);
+    }
+
+    public void RemoveAll() {
+        this._items.removeAll(this._items);
+    }
 }

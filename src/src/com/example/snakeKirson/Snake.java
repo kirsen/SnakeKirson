@@ -14,6 +14,8 @@ import java.util.List;
  */
 public class Snake extends GameObject implements IGameObject {
     protected Items _items = new Items();
+    protected Head _head;
+    protected Tail _tail;
 
     public Snake() {
 
@@ -25,5 +27,17 @@ public class Snake extends GameObject implements IGameObject {
 
     public void Draw(Canvas canvas) {
 
+    }
+
+    public void AddHead(Head head) {
+        this._head = head;
+    }
+
+    public void AddTail(Tail tail) {
+        this._tail = tail;
+    }
+
+    public void AddItem(Item item) {
+        this._items.Add(item);
     }
 }
