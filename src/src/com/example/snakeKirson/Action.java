@@ -13,8 +13,8 @@ import android.graphics.Canvas;
  */
 
 public class Action implements IGameObject {
-    protected Snake _snake = new Snake();
-    protected Foods _foods = new Foods();
+    protected Snake _snake;
+    protected Foods _foods;
 
     public void SetFoods(Foods foods) {
         this._foods = foods;

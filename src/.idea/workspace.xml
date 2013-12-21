@@ -35,30 +35,33 @@
     <file path="$USER_HOME$/Sudokuv4/res/layout-land/main.xml" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1384852147563" ignored="false" />
     <file path="$USER_HOME$/Sudokuv4/src/org/example/sudoku/Sudoku.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1384852397613" ignored="false" />
     <file path="$USER_HOME$/Sudokuv4/res/values/strings.xml" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1381833299955" ignored="false" />
-    <file path="/fragment.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387450144411" ignored="false" />
-    <file path="/MyActivity.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387451947401" ignored="false" />
-    <file path="/Game.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387451620746" ignored="false" />
-    <file path="/Foods.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1385447757213" ignored="false" />
-    <file path="/Snake.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387451383605" ignored="false" />
-    <file path="/Items.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387451554896" ignored="false" />
+    <file path="/fragment.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387617817549" ignored="false" />
+    <file path="/MyActivity.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387616544070" ignored="false" />
+    <file path="/Game.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387616750604" ignored="false" />
+    <file path="/Foods.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387617294132" ignored="false" />
+    <file path="/Snake.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387618757687" ignored="false" />
+    <file path="/Items.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387616160633" ignored="false" />
     <file path="/Apple.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387451148604" ignored="false" />
-    <file path="/Tail.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1381835779949" ignored="false" />
-    <file path="/Head.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387450320587" ignored="false" />
+    <file path="/Tail.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387616344814" ignored="false" />
+    <file path="/Head.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387618543528" ignored="false" />
     <file path="/main.xml" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1384848618099" ignored="false" />
     <file path="/Loop.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1385452454989" ignored="false" />
     <file path="/Action.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1385447255679" ignored="false" />
     <file path="/GameObject.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1385448617939" ignored="false" />
-    <file path="/Food.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1385454333780" ignored="false" />
+    <file path="/Food.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387616824021" ignored="false" />
     <file path="/Dummy.txt" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1384852608543" ignored="false" />
     <file path="/Field.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1384851738413" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1384851875771" ignored="false" />
     <file path="/Sudoku.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1384852394128" ignored="false" />
-    <file path="/GameView.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1385454440760" ignored="false" />
+    <file path="/GameView.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387530669352" ignored="false" />
     <file path="$USER_HOME$/Sudokuv4/.idea/workspace.xml" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1385456171038" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/example/snakeKirson/R.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387447191688" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/example/snakeKirson/Manifest.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387447191688" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387449517541" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/example/snakeKirson/BuildConfig.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387447227285" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/example/snakeKirson/BuildConfig.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387613073968" ignored="false" />
+    <file path="/Queue.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387617815267" ignored="false" />
+    <file path="/Item.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387614828836" ignored="false" />
+    <file path="/BodyItem.java" changelist="fddba5cc-ea65-4f61-b57a-4c4d910a5f6c" time="1387615748167" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +112,38 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/snakeKirson/Game.java" line="43" class="com.example.snakeKirson.Game" package="com.example.snakeKirson">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/snakeKirson/Head.java" line="35" class="com.example.snakeKirson.Head" package="com.example.snakeKirson">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -119,87 +154,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/GameView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="44" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/MyActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="46" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.60106385">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#535#551#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="34" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+            <state line="45" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Snake.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Snake.java">
+      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="22" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Items.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Items.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="43" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Apple.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Apple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Head.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Head.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Food.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Food.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="4" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+            <state line="21" column="40" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -208,7 +175,52 @@
       <file leaf-file-name="Foods.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Foods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="274" selection-end="316" vertical-scroll-proportion="0.0">
+            <state line="32" column="38" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Head.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Head.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="8" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BodyItems.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/BodyItems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="45" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Food.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Food.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="53" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Apple.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Apple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="39" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Snake.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Snake.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="8" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.5263158">
               <folding />
             </state>
           </provider>
@@ -224,24 +236,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/Game.xml" />
-        <option value="$PROJECT_DIR$/res/layout/gam.xml" />
-        <option value="$PROJECT_DIR$/res/layout/game.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Action.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Foods.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/GameObject.java" />
         <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Loop.java" />
         <option value="$PROJECT_DIR$/src/com/example/snakeKirson/GameView.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Item.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Food.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Head.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Apple.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Snake.java" />
         <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Items.java" />
-        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Item.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/BodyItems.java" />
         <option value="$PROJECT_DIR$/src/com/example/snakeKirson/MyActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Action.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Tail.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Food.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/BodyItem.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Apple.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Foods.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Head.java" />
+        <option value="$PROJECT_DIR$/src/com/example/snakeKirson/Snake.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
@@ -275,8 +290,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -597,24 +612,24 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4996016" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3232" sideWeight="0.5003984" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984" sideWeight="0.4996016" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5003984" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.4996016" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.672" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.062151395" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24063745" sideWeight="0.6768" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3232" sideWeight="0.4996016" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21593626" sideWeight="0.68" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32" sideWeight="0.4996016" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32669324" sideWeight="0.672" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32669324" sideWeight="0.672" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.672" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.672" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -684,112 +699,113 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Loop.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Tail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="22" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
+        <state line="35" column="10" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/GameObject.java">
+    <entry file="jar://$USER_HOME$/Загрузки/adt-bundle-linux-x86_64-20130917/sdk/platforms/android-18/android.jar!/android/graphics/Point.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+        <state line="21" column="22" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Loop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/GameView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="44" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Foods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="274" selection-end="316" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+        <state line="30" column="24" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+        <state line="23" column="53" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/BodyItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="45" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Apple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="39" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Head.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Apple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="22" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="43" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
+        <state line="35" column="8" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="34" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="45" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Загрузки/adt-bundle-linux-x86_64-20130917/sdk/platforms/android-18/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="766" selection-end="766" vertical-scroll-proportion="0.40729484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Загрузки/adt-bundle-linux-x86_64-20130917/sdk/platforms/android-18/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="86" selection-start="547" selection-end="547" vertical-scroll-proportion="0.2857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Загрузки/adt-bundle-linux-x86_64-20130917/sdk/platforms/android-18/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="106" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="46" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.60106385">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#535#551#0" expanded="true" />
-          </folding>
+        <state line="21" column="40" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Foods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="38" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/snakeKirson/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="8" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.5263158">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,10 @@
 package com.example.snakeKirson;
 
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Point;
+
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,10 +14,17 @@ import android.graphics.Bitmap;
  * To change this template use File | Settings | File Templates.
  */
 public class Item {
+    protected Map<String, Bitmap> _resources;
     protected GameView _gameView;
-    protected int _x=0;
-    protected int _y=0;
+    protected Bitmap _image;
+    protected Point _pos = new Point(0,0);
 
-    protected Bitmap _bmp;
+    public void Update() {
+
+    }
+
+    public void Draw(Canvas canvas) {
+
+    }
 
 }

@@ -67,10 +67,10 @@ public class GameView extends SurfaceView
         });
     }
 
-    public Apple createSprite(int resouce) {
+    /*public Apple createSprite(int resouce) {
         Bitmap bmp = BitmapFactory.decodeResource(getResources(), resouce);
         return new Apple(this, bmp);
-    }
+    } */
 
     public void Stop() {
         this._loop.SetRunning(false);

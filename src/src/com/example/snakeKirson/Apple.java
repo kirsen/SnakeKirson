@@ -31,8 +31,6 @@ public class Apple extends Food {
     }
 
     public void Draw(Canvas canvas) {
-        //Random rand = new Random();
-        //canvas.drawLine(this._x, this._y, this._x + rand.nextInt(1000), this._y + rand.nextInt(1000), new Paint());
         android.graphics.Matrix s = new android.graphics.Matrix();
         s.postTranslate(this._x, this._y);
         s.postScale((float)1,(float)1); // size

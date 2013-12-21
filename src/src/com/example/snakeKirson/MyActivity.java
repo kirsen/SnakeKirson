@@ -25,25 +25,21 @@ public class MyActivity extends Activity {
 
         resources.put("Apple", BitmapFactory.decodeResource(getResources(), R.drawable.apple));
 
-        resources.put("HeadToLeft", BitmapFactory.decodeResource(getResources(), R.drawable.headToLeft));
-        resources.put("HeadToRight", BitmapFactory.decodeResource(getResources(), R.drawable.headToRight));
-        resources.put("HeadToUp", BitmapFactory.decodeResource(getResources(), R.drawable.headToUp));
-        resources.put("HeadToDown", BitmapFactory.decodeResource(getResources(), R.drawable.headToDown));
+        resources.put("HeadToLeft", BitmapFactory.decodeResource(getResources(), R.drawable.headtoleft));
+        resources.put("HeadToRight", BitmapFactory.decodeResource(getResources(), R.drawable.headtoright));
+        resources.put("HeadToUp", BitmapFactory.decodeResource(getResources(), R.drawable.headtoup));
+        resources.put("HeadToDown", BitmapFactory.decodeResource(getResources(), R.drawable.headtodown));
 
-        resources.put("VerticalItem", BitmapFactory.decodeResource(getResources(), R.drawable.verticalItem));
-        resources.put("HorizontalItem", BitmapFactory.decodeResource(getResources(), R.drawable.horizontalItem));
+        resources.put("VerticalItem", BitmapFactory.decodeResource(getResources(), R.drawable.verticalitem));
+        resources.put("HorizontalItem", BitmapFactory.decodeResource(getResources(), R.drawable.horizontalitem));
 
-        resources.put("TailToLeft", BitmapFactory.decodeResource(getResources(), R.drawable.tailToLeft));
-        resources.put("TailToRight", BitmapFactory.decodeResource(getResources(), R.drawable.tailToRight));
-        resources.put("TailToUp", BitmapFactory.decodeResource(getResources(), R.drawable.tailToUp));
-        resources.put("TailToDown", BitmapFactory.decodeResource(getResources(), R.drawable.tailToDown));
-
-
-        int width = 300;
-        int height = 300;
+        resources.put("TailToLeft", BitmapFactory.decodeResource(getResources(), R.drawable.tailtoleft));
+        resources.put("TailToRight", BitmapFactory.decodeResource(getResources(), R.drawable.tailtoright));
+        resources.put("TailToUp", BitmapFactory.decodeResource(getResources(), R.drawable.tailtoup));
+        resources.put("TailToDown", BitmapFactory.decodeResource(getResources(), R.drawable.tailtodown));
 
         setContentView(gameView);
-        this._game = new Game(gameView, resources, width, height);
+        this._game = new Game(gameView, resources);
         this._game.Start();
 
     }

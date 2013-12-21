@@ -5,25 +5,25 @@ import android.graphics.Canvas;
 import android.graphics.Point;
 
 import java.util.Map;
-import java.util.Random;
 
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 15.10.13
- * Time: 15:05
+ * Date: 21.12.13
+ * Time: 12:44
  * To change this template use File | Settings | File Templates.
  */
-public class Tail extends Item {
-    public Tail(Map<String, Bitmap> resources, GameView gameView, Queue queue) {
+public class BodyItem extends Item {
+    protected int _index;
+
+    public BodyItem(Map<String, Bitmap> resources, GameView gameView, Queue queue, int index) {
         this._resources = resources;
         this._gameView = gameView;
+        this._index = index;
     }
 
     public void Update(Queue queue) {
-        this._pos.x = queue.lastElement().x;
-        this._pos.y = queue.lastElement().y;
-
+        this._pos = queue.get(this._index);
 
         // select image
     }

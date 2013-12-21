@@ -24,36 +24,21 @@ public class Game {
     private int _width;
     private int _height;
 
-    public Game(GameView gameView, Map<String, Bitmap> resources, int width, int height) {
+    public Game(GameView gameView, Map<String, Bitmap> resources) {
         this._gameView = gameView;
         this._resources = resources;
-        this._width = width;
-        this._height = height;
+        this._width = gameView.getWidth();
+        this._height = gameView.getHeight();
 
     }
 
     public void Start() {
         Action scene = new Action();
 
-        this._foods = new Foods();
-        this._snake = new Snake();
+        this._foods = new Foods(this._resources, this._gameView, 10);
+        this._snake = new Snake(this._resources, this._gameView, 3);
 
-        Random rand = new Random();
-        for(int i=0; i< 3;i++)
-        {
-            int x = rand.nextInt(this._width);
-            int y = rand.nextInt(this._height);
-            this._foods.AddFood(new Apple(x, y, this._gameView,this._resources.get("Apple")));
-        }
         scene.SetFoods(this._foods);
-
-        this._snake.AddHead(new Head(this._gameView,this._resources.get("Head")));
-        for(int i=0; i< 3;i++)
-        {
-            this._snake.AddItem(new Item(this._gameView,this._resources.get("Item")));
-        }
-        this._snake.AddTail(new Tail(this._gameView,this._resources.get("Tail")));
-
         scene.SetSnake(this._snake);
 
         this._gameView.SetAction(scene);
