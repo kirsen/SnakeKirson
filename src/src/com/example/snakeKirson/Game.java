@@ -27,6 +27,7 @@ public class Game {
     public Game(GameView gameView, Map<String, Bitmap> resources) {
         this._gameView = gameView;
         this._resources = resources;
+
         this._width = gameView.getWidth();
         this._height = gameView.getHeight();
 
@@ -35,8 +36,8 @@ public class Game {
     public void Start() {
         Action scene = new Action();
 
-        this._foods = new Foods(this._resources, this._gameView, 10);
-        this._snake = new Snake(this._resources, this._gameView, 3);
+        this._foods = new Foods(this._resources, this._gameView, 1);
+        this._snake = new Snake(this._resources, this._gameView, 5);
 
         scene.SetFoods(this._foods);
         scene.SetSnake(this._snake);

@@ -55,12 +55,13 @@ class Queue
 
     public Point firstElement()
     {
-        return _vectorQueue.get(0);
+        return _vectorQueue.get(_vectorQueue.size()-1);
     }
 
     public Point lastElement()
     {
-        return _vectorQueue.get(_vectorQueue.size()-1);
+        return _vectorQueue.get(0);
+
     }
 
     public synchronized Point get(int index)

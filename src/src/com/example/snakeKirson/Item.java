@@ -13,13 +13,13 @@ import java.util.Map;
  * Time: 15:04
  * To change this template use File | Settings | File Templates.
  */
-public class Item {
+public class Item  implements ISnakePart {
     protected Map<String, Bitmap> _resources;
     protected GameView _gameView;
     protected Bitmap _image;
     protected Point _pos = new Point(0,0);
 
-    public void Update() {
+    public void Update(Queue queue) {
 
     }
 

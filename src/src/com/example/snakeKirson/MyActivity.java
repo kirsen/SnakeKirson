@@ -1,4 +1,4 @@
-package com.example.snakeKirson;
+    package com.example.snakeKirson;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,8 +30,8 @@ public class MyActivity extends Activity {
         resources.put("HeadToUp", BitmapFactory.decodeResource(getResources(), R.drawable.headtoup));
         resources.put("HeadToDown", BitmapFactory.decodeResource(getResources(), R.drawable.headtodown));
 
-        resources.put("VerticalItem", BitmapFactory.decodeResource(getResources(), R.drawable.verticalitem));
-        resources.put("HorizontalItem", BitmapFactory.decodeResource(getResources(), R.drawable.horizontalitem));
+        resources.put("VerticalBodyItem", BitmapFactory.decodeResource(getResources(), R.drawable.verticalbodyitem));
+        resources.put("HorizontalBodyItem", BitmapFactory.decodeResource(getResources(), R.drawable.horizontalbodyitem));
 
         resources.put("TailToLeft", BitmapFactory.decodeResource(getResources(), R.drawable.tailtoleft));
         resources.put("TailToRight", BitmapFactory.decodeResource(getResources(), R.drawable.tailtoright));
@@ -56,6 +56,8 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        //GameVie d = new  GameVie();
 
     }
 

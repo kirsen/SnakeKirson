@@ -24,8 +24,8 @@ public class Foods {
         this._resources = resources;
         this._gameView = gameView;
         this._numberOfFood = numberOfFood;
-        this._width = 400;//gameView.getWidth();
-        this._height = 400;//gameView.getHeight();
+        this._width = 400;//gameView.getWidth(); 400
+        this._height = 400;//gameView.getHeight();400
 
         Random rand = new Random();
         for(int i=0; i< this._numberOfFood;i++)

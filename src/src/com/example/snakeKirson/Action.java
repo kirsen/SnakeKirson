@@ -31,7 +31,7 @@ public class Action implements IGameObject {
 
     public void Draw(Canvas canvas) {
         this._foods.Draw(canvas);
-        //this._snake.Draw(canvas);
+        this._snake.Draw(canvas);
     }
 
 }

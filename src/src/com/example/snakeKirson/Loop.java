@@ -2,11 +2,11 @@ package com.example.snakeKirson;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.graphics.Canvas;
 
 import java.util.Timer;
 import java.util.TimerTask;
-import android.graphics.Canvas;
-
+import java.lang.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -67,9 +67,14 @@ public class Loop extends Thread {
                 {
                     // собственно рисование
                     Step(canvas);
+                    try {
+                        Thread.sleep(1000);
+                    } catch(InterruptedException ex) {
+                        Thread.currentThread().interrupt();
+                    }
                 }
             }
-            catch (Exception e) { }
+            //catch (Exception e) { throw e;}
             finally
             {
                 if (canvas != null)

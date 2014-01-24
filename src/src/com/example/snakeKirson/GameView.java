@@ -26,14 +26,15 @@ public class GameView extends SurfaceView
 {
     private Loop _loop;
 
-    public GameView(Context context)
+
+    public GameView(Context context)        ///вот тут-то нужно упровлять вторым меню
     {
         super(context);
 
         _loop = new Loop(this);
 
         /*Рисуем все наши объекты и все все все*/
-        getHolder().addCallback(new SurfaceHolder.Callback()
+        getHolder().addCallback(new SurfaceHolder.Callback()    ///получение области рисования
         {
             /*** Уничтожение области рисования */
             public void surfaceDestroyed(SurfaceHolder holder)
@@ -58,11 +59,13 @@ public class GameView extends SurfaceView
             {
                 _loop.SetRunning(true);
                 _loop.start();
+                holder.setSizeFromLayout();
             }
 
             /** Изменение области рисования */
             public void surfaceChanged(SurfaceHolder holder, int format, int width, int height)
             {
+                //holder.setFixedSize(5,5);
             }
         });
     }

@@ -15,7 +15,7 @@ import java.util.Map;
  * Time: 15:04
  * To change this template use File | Settings | File Templates.
  */
-public class BodyItems {
+public class BodyItems  implements ISnakePart {
     protected List<BodyItem> _items = new ArrayList<BodyItem>();
     protected Map<String, Bitmap> _resources;
     protected GameView _gameView;
@@ -28,12 +28,13 @@ public class BodyItems {
             this.Add(new BodyItem(resources, gameView, queue, i));
         }
 
+        this.Update(queue);
 
     };
 
     public void Update(Queue queue) {
         for(BodyItem item : this._items) {
-            item.Update();
+            item.Update(queue);
         }
     }
 
@@ -41,6 +42,7 @@ public class BodyItems {
         for(BodyItem item : this._items) {
             item.Draw(canvas);
         }
+
     }
 
     public void Add(BodyItem item) {

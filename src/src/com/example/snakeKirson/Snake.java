@@ -13,18 +13,24 @@ import  java.util.Map;
  * Time: 15:03
  * To change this template use File | Settings | File Templates.
  */
-public class Snake extends GameObject implements IGameObject {
+
+interface ISnakePart {
+    public void Update(Queue queue);
+    public void Draw(Canvas canvas);
+}
+
+public class Snake extends GameObject {
     protected BodyItems _bodyItems;
     protected Head _head;
     protected Tail _tail;
 
     protected Map<String, Bitmap> _resources;
     protected GameView _gameView;
-    protected int _snakeLength = 3;
+    protected int _snakeLength = 0;
     protected int _width; // ширина поля
     protected int _height;// высота поля
     protected Queue _queue;
-    protected int _speedValue = 10;
+    protected int _speedValue = 190;
     protected Point _speed;
     protected Point _pos;
 
@@ -33,7 +39,8 @@ public class Snake extends GameObject implements IGameObject {
         this._gameView = gameView;
         this._snakeLength = snakeLength;
         this._width = 400;//gameView.getWidth();
-        this._height = 400;gameView.getHeight();
+        this._height = 400;
+        gameView.getHeight();
         this._speed = new Point(this._speedValue,0);
         this._pos = new Point(0,0);
 
