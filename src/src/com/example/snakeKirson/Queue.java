@@ -1,5 +1,6 @@
 package com.example.snakeKirson;
 
+import android.content.res.Resources;
 import android.graphics.Point;
 
 import java.util.ArrayList;
@@ -17,8 +18,9 @@ class Queue
     private List<QueueItem> _vectorQueue = new ArrayList<QueueItem>();
 
     Queue(int snakeLength) {
+
         for(int i=0;i<snakeLength;i++) {
-            this.push(new QueueItem(new Point(i, 0), new Point(1,0)));
+            this.push(new QueueItem(new Point(i+Core.resources.getInteger(R.integer.startSnakePosX), Core.resources.getInteger(R.integer.startSnakePosY)), new Point(1,0)));
         }
 
     }

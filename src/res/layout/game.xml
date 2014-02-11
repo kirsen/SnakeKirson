@@ -6,42 +6,12 @@
 
 <com.example.snakeKirson.GameViewSurface
         android:id="@+id/game_view"
-        android:layout_width="800dp"
-        android:layout_height="380dp"/>
+        android:layout_width="950dp"
+        android:layout_height="420dp"/>
 
-<LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+
     <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Left"
-            android:id="@+id/left_button"
-            android:layout_gravity="left|center_vertical"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="Right"
-            android:id="@+id/right_button"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Up"
-            android:id="@+id/up_button" android:layout_gravity="left|center_vertical"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Down"
-            android:id="@+id/down_button"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Drow"
-            android:id="@+id/grow_button"/>
-</LinearLayout>
-    <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Main menu"
             android:id="@+id/mainMenu_button"/>

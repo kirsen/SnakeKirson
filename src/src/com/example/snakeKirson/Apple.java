@@ -2,6 +2,9 @@ package com.example.snakeKirson;
 
 import android.graphics.*;
 
+import java.util.Map;
+import java.util.Random;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kira
@@ -11,23 +14,17 @@ import android.graphics.*;
  */
 public class Apple extends Food implements IGameObject {
 
-    public Apple(Field field, Bitmap bmp, int x, int y)
+    public Apple(Field field, Map<String, Bitmap> resources)
     {
-        SetPosInFild(new Point(x,y));
+        Point point = field.GetFreePoint();
+        SetPosInFild(field.GetPoint(point.x, point.y));
         _field = field;
-        this._bmp = bmp;                    //возвращаем рисунок
-
-//        field.AddObject(x, y, this);
-        SetPosInFild(field.GetPoint(x, y));
+        _resources = resources;
+//        this._bmp = bmp;                    //возвращаем рисунок
 
     }
 
     public void Update() {
-        //Random rand = new Random();
-
-        //this._x = 50;//rand.nextInt(1000);
-        //this._y = 50;//rand.nextInt(400);
-
     }
 
     public void Draw(Canvas canvas) {
@@ -35,7 +32,7 @@ public class Apple extends Food implements IGameObject {
         s.postTranslate(GetPosInFild().x, GetPosInFild().y);
         //s.postScale((float)0.1,(float)0.1); // size
 
-        canvas.drawBitmap(this._bmp, s, null);
+        canvas.drawBitmap(_resources.get("Apple"), s, null);
     }
 
     public boolean IntersectWith(IGameObject gameObject)

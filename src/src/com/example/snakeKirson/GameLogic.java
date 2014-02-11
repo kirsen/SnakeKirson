@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.graphics.Point;
 import android.util.Log;
 
-import java.util.Objects;
+//import java.util.Objects;
 
 /**
  * Created by sogimu on 1/24/14.
@@ -53,7 +53,7 @@ public class GameLogic
             Log.d("GameLogic", "HEAD of snake intersect with FOODS!");
             _snake.Grow();
             _foods.GetFoodIntersectedWith(_snake.GetHead()).remove();
-
+            _foods.AddRandomFood();
 
         }
     }

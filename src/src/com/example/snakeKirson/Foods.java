@@ -12,41 +12,12 @@ import android.graphics.*;
  */
 public class Foods implements IGameObject
 {
-//    protected Field _field;
-//    protected Point _pos;
     protected List<Food> _foods = new ArrayList<Food>();
-//    protected Map<String, Bitmap> _resources;
-//    protected int _numberOfFood = 0;
+    private FoodFactory _foodFactory;
 
-    public Foods(/*Field field, Map<String, Bitmap> resources, int numberOfFood*/)
+    public Foods(FoodFactory foodFactory)
     {
-//        _field = field;
-//        this._resources = resources;
-//        this._numberOfFood = numberOfFood;
-//        SetPosInFild(new Point(0,0));
-
-//        for(int i=0; i< this._numberOfFood;i++)
-//        {
-//            Random rand = new Random();
-//
-//            boolean itemNotEmpty = true;
-//
-//            while (itemNotEmpty) {
-//                int potentialyX = rand.nextInt(_field.widthNumberItems - 1);
-//                int potentialyY = rand.nextInt(_field.heightNumberItems - 1);
-//
-//                if(field.GetObjects(potentialyX,potentialyY).isEmpty()) {
-////                x = 25;
-////                y = 0;
-////                    field.AddObject(potentialyX,potentialyY, this);
-////                    SetPosInFild(field.GetPoint(potentialyX,potentialyY));
-//                    this.AddFood(new Apple(field, this._resources.get("Apple"), potentialyX, potentialyY));
-//                    itemNotEmpty = false;
-//                }
-//
-//            }
-//
-//        }
+        _foodFactory = foodFactory;
 
     };
 
@@ -64,6 +35,10 @@ public class Foods implements IGameObject
 
     public void Add(Food food) {
         this._foods.add(food);
+    }
+
+    public void AddRandomFood() {
+        this._foods.add(_foodFactory.GetRandomFood());
     }
 
     public void Remove(Food food) {

@@ -81,4 +81,26 @@ public class Field {
 
     }
 
+    public Point GetFreePoint()
+    {
+        Random rand = new Random();
+
+        boolean itemNotEmpty = true;
+
+        int potentialyX = 0;
+        int potentialyY = 0;
+
+        while (itemNotEmpty) {
+            potentialyX = rand.nextInt(widthNumberItems - 1);
+            potentialyY = rand.nextInt(heightNumberItems - 1);
+
+            if(GetObjects(potentialyX, potentialyY).isEmpty()) {
+                itemNotEmpty = false;
+            }
+        }
+
+        return new Point(potentialyX, potentialyY);
+
+    }
+
     }

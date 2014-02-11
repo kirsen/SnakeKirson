@@ -36,51 +36,13 @@ public class GameActivity extends Activity {
 
         Resources res = getResources();
 
-       Button mainMenu_button = (Button) findViewById(R.id.mainMenu_button);
-        Button left_button = (Button) findViewById(R.id.left_button);
-        Button right_button = (Button) findViewById(R.id.right_button);
-        Button up_button = (Button) findViewById(R.id.up_button);
-        Button down_button = (Button) findViewById(R.id.down_button);
-        Button grow_button = (Button) findViewById(R.id.grow_button);
-
-        left_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // snake to left
-                snake.goToLeft();
-            }
-        });
-
-        right_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // snake to right
-                snake.goToRight();
-            }
-        });
-
-        up_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // snake to up
-                snake.goToTop();
-            }
-        });
-
-        down_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // snake to down
-                snake.goToBottom();
-            }
-        });
-
-        grow_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //
-
-
-            }
-        });
+        Button mainMenu_button = (Button) findViewById(R.id.mainMenu_button);
 
         mainMenu_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                GameViewSurface view = (GameViewSurface) findViewById(R.id.game_view);
+                view.Stop();
+
                 finish();
             }
         });
@@ -105,37 +67,24 @@ public class GameActivity extends Activity {
         GameViewSurface view = (GameViewSurface) findViewById(R.id.game_view);
 
         Context context = getBaseContext();
+        Core.Init(context);
 
         field = new Field(21, (int)convertDpToPixel(800, context), (int)convertDpToPixel(380, context));
         snake = new Snake(field, resources, res.getInteger(R.integer.startSnakeLength));
 
-        foods = new Foods();
+        foods = new Foods(new FoodFactory(field, resources));
         int startNumberOfApple = res.getInteger(R.integer.startNumberOfApple);
 
         for(int i=0; i< startNumberOfApple;i++)
         {
-            Random rand = new Random();
-
-            boolean itemNotEmpty = true;
-
-            while (itemNotEmpty) {
-                int potentialyX = rand.nextInt(field.widthNumberItems - 1);
-                int potentialyY = rand.nextInt(field.heightNumberItems - 1);
-
-                if(field.GetObjects(potentialyX,potentialyY).isEmpty()) {
-                    foods.Add(new Apple(field, resources.get("Apple"), potentialyX, potentialyY));
-                    itemNotEmpty = false;
-                }
-            }
+            foods.AddRandomFood();
         }
 
         Action scene = new Action();
-
-        scene.Add((IGameObject)foods);
-
+        scene.Add((IGameObject) foods);
         scene.Add((IGameObject) snake);
-        view.setAction(scene);
 
+        view.setAction(scene, snake);
         view.setGameLogic(new GameLogic(snake, foods, field, view, this));
 
     }

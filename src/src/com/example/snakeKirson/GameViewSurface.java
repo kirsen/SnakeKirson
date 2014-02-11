@@ -2,9 +2,11 @@ package com.example.snakeKirson;
 
 //import towe.def.GameView.GameThread;
 import android.content.Context;
-        import android.util.AttributeSet;
+import android.graphics.Point;
+import android.util.AttributeSet;
 import android.util.Log;
-        import android.view.SurfaceHolder;
+import android.view.MotionEvent;
+import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 /**
@@ -20,6 +22,10 @@ public class GameViewSurface extends SurfaceView implements SurfaceHolder.Callba
     private LoopThread _loopThread;
 
     private Action _action;
+    private Snake _snake;
+
+    private Point _downPoint;
+    private Point _upPoint;
 
     public GameViewSurface(Context context) {
         super(context);
@@ -35,8 +41,9 @@ public class GameViewSurface extends SurfaceView implements SurfaceHolder.Callba
 
     }
 
-    public void setAction(Action action) {
+    public void setAction(Action action, Snake snake) {
         _loopThread.setAction(action);
+        _snake = snake;
     }
 
     public void setGameLogic(GameLogic gameLogic) {
@@ -89,5 +96,91 @@ public class GameViewSurface extends SurfaceView implements SurfaceHolder.Callba
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
         Stop();
        Log.d("GameViewSurface", "surfaceDestroyed");
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        // TODO Auto-generated method stub
+        boolean touched;
+        float touched_x;
+        float touched_y;
+
+        touched_x = event.getX();
+        touched_y = event.getY();
+
+        Log.d("onTouchEvent pos x = ", ""+touched_x);
+        Log.d("onTouchEvent pos y = ", ""+touched_y);
+
+        int action = event.getAction();
+        switch(action){
+            case MotionEvent.ACTION_DOWN:
+                touched = true;
+                Log.d("onTouchEvent event = ", "ACTION_DOWN");
+                _downPoint = new Point((int)touched_x, (int)touched_y);
+
+                break;
+            case MotionEvent.ACTION_MOVE:
+                touched = true;
+                Log.d("onTouchEvent event = ", "ACTION_MOVE");
+
+                break;
+            case MotionEvent.ACTION_UP:
+                touched = false;
+                Log.d("onTouchEvent event = ", "ACTION_UP");
+                _upPoint = new Point((int)touched_x, (int)touched_y);
+
+                Point normPoint = new Point(_upPoint.x - _downPoint.x, _upPoint.y - _downPoint.y);
+                if(normPoint.x > 0)
+                {
+                    if(normPoint.y > 0)
+                    {
+                       if(Math.abs(normPoint.x) > Math.abs(normPoint.y)) {
+                           Log.d("onTouchEvent Gesture", "right");
+                           _snake.goToRight();
+
+                       } else {
+                           Log.d("onTouchEvent Gesture", "down");
+                           _snake.goToBottom();
+                       }
+                    } else {
+                        if(Math.abs(normPoint.x) > Math.abs(normPoint.y)) {
+                            Log.d("onTouchEvent Gesture", "right");
+                            _snake.goToRight();
+                        } else {
+                            Log.d("onTouchEvent Gesture", "up");
+                            _snake.goToTop();
+                        }
+                    }
+
+                } else {
+
+                    if(normPoint.y > 0)
+                    {
+                        if(Math.abs(normPoint.x) > Math.abs(normPoint.y)) {
+                            Log.d("onTouchEvent Gesture", "left");
+                            _snake.goToLeft();
+                        } else {
+                            Log.d("onTouchEvent Gesture", "down");
+                            _snake.goToBottom();
+                        }
+
+                    } else {
+                        if(Math.abs(normPoint.x) > Math.abs(normPoint.y)) {
+                            Log.d("onTouchEvent Gesture", "left");
+                            _snake.goToLeft();
+
+                        } else {
+                            Log.d("onTouchEvent Gesture", "up");
+                            _snake.goToTop();
+                        }
+
+                    }
+                }
+
+                break;
+
+            default:
+        }
+        return true; //processed
     }
 }

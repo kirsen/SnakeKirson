@@ -2,6 +2,8 @@ package com.example.snakeKirson;
 
 import android.graphics.*;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kira
@@ -12,9 +14,10 @@ import android.graphics.*;
 public class Food implements IGameObject
 {
     protected Field _field;
+    protected Map<String, Bitmap> _resources;
     protected Point _pos;
 
-    protected  Bitmap _bmp;
+//    protected  Bitmap _bmp;
 
     public void Update() {};
     public void Draw(Canvas canvas) {};

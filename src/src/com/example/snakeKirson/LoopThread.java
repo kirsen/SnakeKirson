@@ -41,10 +41,12 @@ public class LoopThread extends Thread {
                 canvas = _surfaceHolder.lockCanvas(null);
                 synchronized (_surfaceHolder) {
 
+
                     canvas.drawColor(Color.CYAN);
+
                     _action.Update();
-                   _gameLogic.Update();
                     _action.Draw(canvas);
+                    _gameLogic.Update();
 
                     try {
                         Thread.sleep(250);
