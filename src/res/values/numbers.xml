@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer  name="startNumberOfApple">30</integer>
+    <integer  name="startSnakeLength">15</integer>
+    <integer  name="delayOfFrame">100</integer>
+
+</resources>

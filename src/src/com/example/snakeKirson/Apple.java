@@ -2,23 +2,23 @@ package com.example.snakeKirson;
 
 import android.graphics.*;
 
-import java.util.Random;
-
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 15.10.13
- * Time: 15:04
+ * Date: 10.01.14
+ * Time: 15:02
  * To change this template use File | Settings | File Templates.
  */
-public class Apple extends Food {
+public class Apple extends Food implements IGameObject {
 
-    public Apple(int x, int y, GameView gameView, Bitmap bmp)
+    public Apple(Field field, Bitmap bmp, int x, int y)
     {
-        this._gameView = gameView;
+        SetPosInFild(new Point(x,y));
+        _field = field;
         this._bmp = bmp;                    //возвращаем рисунок
-        this._y = y;
-        this._x = x;
+
+//        field.AddObject(x, y, this);
+        SetPosInFild(field.GetPoint(x, y));
 
     }
 
@@ -32,9 +32,15 @@ public class Apple extends Food {
 
     public void Draw(Canvas canvas) {
         android.graphics.Matrix s = new android.graphics.Matrix();
-        s.postTranslate(this._x, this._y);
-        s.postScale((float)1,(float)1); // size
+        s.postTranslate(GetPosInFild().x, GetPosInFild().y);
+        //s.postScale((float)0.1,(float)0.1); // size
 
         canvas.drawBitmap(this._bmp, s, null);
     }
+
+    public boolean IntersectWith(IGameObject gameObject)
+    {
+        return false;
+    }
+
 }

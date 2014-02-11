@@ -1,4 +1,4 @@
-package com.example.canvas;
+package com.example.snakeKirson;
 
 import java.util.*;
 import android.graphics.*;
@@ -17,10 +17,6 @@ public class Field {
     public int _itemWidth;
     public int widthNumberItems;
     public int heightNumberItems;
-
-//    private Snake _snake;
-//    private Foods _foods;
-//    private Field _field;
 
     private List<List<FieldItem>> _items = new ArrayList<List<FieldItem>>();
 
@@ -62,6 +58,27 @@ public class Field {
     public List<List<FieldItem>>  GetFieldList()
     {
         return _items;
+    }
+
+    public boolean HaveGameObjectsOutOfBorder() {
+        for(int i=0;i<_widthNumberItems;i++)
+        {
+            if(!_items.get(i).get(0).objects.isEmpty())
+            {
+                return true;
+            }
+        }
+
+        for(int j=0;j<_heightNumberItems;j++)
+        {
+            if(!_items.get(0).get(j).objects.isEmpty())
+            {
+                return true;
+            }
+        }
+
+        return false;
+
     }
 
     }

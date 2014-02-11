@@ -2,39 +2,38 @@ package com.example.snakeKirson;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Point;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 15.10.13
- * Time: 15:04
+ * Date: 10.01.14
+ * Time: 15:39
  * To change this template use File | Settings | File Templates.
  */
-public class BodyItems  implements ISnakePart {
+public class BodyItems implements ISnakeItem {
+    protected Field _field;
     protected List<BodyItem> _items = new ArrayList<BodyItem>();
     protected Map<String, Bitmap> _resources;
-    protected GameView _gameView;
 
-    public BodyItems(Map<String, Bitmap> resources, GameView gameView, Queue queue) {
-        this._resources = resources;
-        this._gameView = gameView;
+    public BodyItems(/*Field field, Map<String, Bitmap> resources, Queue queue*/) {
+//        _field = field;
+//        _queue = queue;
+//        this._resources = resources;
 
-        for(int i=1; i< queue.size()-1; i++) {
-            this.Add(new BodyItem(resources, gameView, queue, i));
-        }
-
-        this.Update(queue);
+//        for(int i=1; i< queue.size()-1; i++) {
+//            this.Add(new BodyItem(field, resources, queue, i));
+//        }
 
     };
 
-    public void Update(Queue queue) {
+    public void Update(/*Queue queue*/) {
         for(BodyItem item : this._items) {
-            item.Update(queue);
+            item.Update(/*queue*/);
         }
     }
 
@@ -56,4 +55,38 @@ public class BodyItems  implements ISnakePart {
     public void RemoveAll() {
         this._items.removeAll(this._items);
     }
+
+    public int GetSize()
+    {
+        return _items.size();
+    }
+
+    public List<BodyItem> GetItemsList()
+    {
+        return _items;
+    }
+
+    public boolean IntersectWith(IGameObject gameObject)
+    {
+        for(BodyItem bodyItem: _items)
+        {
+            if(bodyItem.GetPosInFild().equals(gameObject.GetPosInFild()))
+            {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+    public Point GetPosInFild()
+    {
+        return null;
+    }
+    public void SetPosInFild(Point pos)
+    {
+//        _pos = pos;
+    }
+
+
 }

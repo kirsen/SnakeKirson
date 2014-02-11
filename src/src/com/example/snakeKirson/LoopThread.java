@@ -1,7 +1,6 @@
-package com.example.canvas;
+package com.example.snakeKirson;
 
 import android.graphics.*;
-import android.util.Log;
 import android.view.SurfaceHolder;
 
 /**
@@ -35,20 +34,20 @@ public class LoopThread extends Thread {
     /** Действия, выполняемые в потоке */
     public void run() {
         Canvas canvas;
+
         while (running) {
             canvas = null;
             try {
                 canvas = _surfaceHolder.lockCanvas(null);
                 synchronized (_surfaceHolder) {
-//                    Log.d("N", "LoopThread Draw()" );
 
-                    canvas.drawColor(Color.BLUE);
+                    canvas.drawColor(Color.CYAN);
                     _action.Update();
                    _gameLogic.Update();
                     _action.Draw(canvas);
 
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(250);
                     } catch(InterruptedException ex) {
                         Thread.currentThread().interrupt();
                     }

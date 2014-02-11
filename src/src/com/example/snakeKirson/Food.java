@@ -1,23 +1,43 @@
 package com.example.snakeKirson;
 
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Bitmap;
+import android.graphics.*;
 
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 15.10.13
- * Time: 15:04
+ * Date: 10.01.14
+ * Time: 15:02
  * To change this template use File | Settings | File Templates.
  */
-
-public class Food extends GameObject {
-
-    protected GameView _gameView;
-    protected int _x=0;
-    protected int _y=0;
+public class Food implements IGameObject
+{
+    protected Field _field;
+    protected Point _pos;
 
     protected  Bitmap _bmp;
+
+    public void Update() {};
+    public void Draw(Canvas canvas) {};
+
+    public boolean IntersectWith(IGameObject gameObject)
+    {
+        if(GetPosInFild().equals(gameObject.GetPosInFild()))
+        {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public Point GetPosInFild()
+    {
+        return _pos;
+    }
+    public void SetPosInFild(Point pos)
+    {
+        _pos = pos;
+    }
+
 
 }

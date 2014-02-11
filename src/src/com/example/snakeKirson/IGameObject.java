@@ -1,6 +1,6 @@
-package com.example.canvas;
+package com.example.snakeKirson;
 
-import android.graphics.Canvas;
+import android.graphics.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,5 +12,8 @@ import android.graphics.Canvas;
 public interface IGameObject {
     public void Update();
     public void Draw(Canvas canvas);
+    public Point GetPosInFild();
+    public void SetPosInFild(Point pos);
+    public boolean IntersectWith(IGameObject gameObject);
 
 }

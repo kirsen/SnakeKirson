@@ -1,4 +1,4 @@
-package com.example.canvas;
+package com.example.snakeKirson;
 
 import java.util.*;
 import android.graphics.*;

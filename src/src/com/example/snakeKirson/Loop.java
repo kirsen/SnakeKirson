@@ -1,11 +1,7 @@
 package com.example.snakeKirson;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.widget.TextView;
-import android.graphics.Canvas;
 
-import java.util.Timer;
-import java.util.TimerTask;
+import android.graphics.*;
+
 import java.lang.*;
 
 /**
@@ -17,13 +13,22 @@ import java.lang.*;
  */
 public class Loop extends Thread {
     /**Объект класса*/
-    private GameView view;
+    private GameViewSurface view;
+//    public Bitmap mBitmap;
+//    public Canvas mCanvas;
+//    public Paint paint, mBitmapPaint;
+//    public Point canvasSize;
 
     protected Action _action;
     protected boolean running = false;
 
-    public Loop(GameView view) {
+    public Loop(GameViewSurface view) {
         this.view = view;
+//        canvasSize = new Point((int)convertDpToPixel(800, context), (int)convertDpToPixel(380, context));
+//
+//        mBitmap = Bitmap.createBitmap(canvasSize.x, canvasSize.y, Bitmap.Config.ARGB_8888);
+//        mCanvas = new Canvas(mBitmap);
+//        mBitmapPaint = new Paint(Paint.DITHER_FLAG);
 
     };
 
@@ -42,8 +47,8 @@ public class Loop extends Thread {
 
     public void Step(Canvas canvas) {
         canvas.drawColor(Color.WHITE);
-        this._action.Update();
-        this._action.Draw(canvas);
+//        this._action.Update();
+//        this._action.Draw(snakeKirson);
 
     }
 
@@ -67,8 +72,10 @@ public class Loop extends Thread {
                 {
                     // собственно рисование
                     Step(canvas);
+
                     try {
                         Thread.sleep(1000);
+
                     } catch(InterruptedException ex) {
                         Thread.currentThread().interrupt();
                     }

@@ -1,7 +1,6 @@
-package com.example.canvas;
+package com.example.snakeKirson;
 
 import android.app.Activity;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;

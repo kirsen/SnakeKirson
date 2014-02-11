@@ -9,35 +9,68 @@ import java.util.Map;
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 21.12.13
- * Time: 12:44
+ * Date: 10.01.14
+ * Time: 15:40
  * To change this template use File | Settings | File Templates.
  */
-public class BodyItem extends Item  implements ISnakePart {
+
+public class BodyItem extends Item implements IGameObject
+{
     protected int _index;
 
-    public BodyItem(Map<String, Bitmap> resources, GameView gameView, Queue queue, int index) {
+    public BodyItem(Field field, Map<String, Bitmap> resources, Queue queue, int index) {
+        _field = field;
+        _queue = queue;
         this._resources = resources;
-        this._gameView = gameView;
         this._index = index;
+        this._image = this._resources.get("HorizontalBodyItem");
+        SetPosInFild(_field.GetPoint(queue.get(_index).point.x, queue.get(_index).point.y));
 
-        this.Update(queue);
 
     }
 
-    public void Update(Queue queue) {
-        this._pos = queue.get(_index);
+    public void Update(/*Queue queue*/)
+    {
+        QueueItem bodyItemQueueItem = _queue.get(_index);
+        if((bodyItemQueueItem.dirrection.x == 1 || bodyItemQueueItem.dirrection.x == -1) && bodyItemQueueItem.dirrection.y == 0)
+        {
+            this._image = this._resources.get("HorizontalBodyItem");
 
-        this._image = this._resources.get("HorizontalBodyItem");
-        // select image
+        } else
+
+        if((bodyItemQueueItem.dirrection.y == -1 || bodyItemQueueItem.dirrection.y == 1) && bodyItemQueueItem.dirrection.x == 0)
+        {
+            this._image = this._resources.get("VerticalBodyItem");
+
+        }
+        this._pos = _field.GetPoint(bodyItemQueueItem.point.x,bodyItemQueueItem.point.y);
 
     }
 
     public void Draw(Canvas canvas) {
         android.graphics.Matrix m = new android.graphics.Matrix();
-        m.postTranslate(this._pos.x, this._pos.y);
-        m.postScale((float)0.3,(float)0.3); // size
+        m.postTranslate(GetPosInFild().x, GetPosInFild().y);
+        //m.postScale((float)0.3,(float)0.3); // size
 
         canvas.drawBitmap(this._image, m, null);
+    }
+
+    public boolean IntersectWith(IGameObject gameObject)
+    {
+        if(GetPosInFild().equals(gameObject.GetPosInFild()))
+        {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Point GetPosInFild()
+    {
+        return _pos;
+    }
+    public void SetPosInFild(Point pos)
+    {
+        _pos = pos;
     }
 }

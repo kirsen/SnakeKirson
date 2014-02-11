@@ -1,22 +1,11 @@
-package com.example.canvas;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
+package com.example.snakeKirson;
 
 //import towe.def.GameView.GameThread;
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.*;
-import android.util.DisplayMetrics;
-import android.util.AttributeSet;
+        import android.util.AttributeSet;
 import android.util.Log;
-import android.view.MotionEvent;
-import android.view.SurfaceHolder;
+        import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
-import android.widget.Button;
 
 /**
  * Created with IntelliJ IDEA.
@@ -54,41 +43,51 @@ public class GameViewSurface extends SurfaceView implements SurfaceHolder.Callba
         _loopThread.setGameLogic(gameLogic);
     }
 
-    @Override
-    public void surfaceCreated(SurfaceHolder surfaceHolder) {
-        //To change body of implemented methods use File | Settings | File Templates.
-        _loopThread.setSurfaceHolder(surfaceHolder);
+    public void Start()
+    {
+        Log.d("GameViewSurface", "Started!");
         _loopThread.setRunning(true);
         _loopThread.start();
 
-        //Log.d("GameViewSurface", "surfaceCreated");
+    }
+
+    public void Stop()
+    {
+        boolean retry = true;
+        _loopThread.setRunning(false);
+
+//        while (retry) {
+//            try {
+//                // ожидание завершение потока
+//                _loopThread.join();
+//                retry = false;
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//
+//            }
+//        }
+        Log.d("GameViewSurface", "Stoped!");
+    }
+
+    @Override
+    public void surfaceCreated(SurfaceHolder surfaceHolder) {
+        _loopThread.setSurfaceHolder(surfaceHolder);
+        Start();
+
+        Log.d("GameViewSurface", "surfaceCreated");
 
     }
 
     @Override
     public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i2, int i3) {
-        //To change body of implemented methods use File | Settings | File Templates.
         surfaceHolder.setFixedSize(i2,i3);
         _loopThread._surfaceHolder = surfaceHolder;
-//        Log.d("GameViewSurface", "surfaceChanged");
+        Log.d("GameViewSurface", "surfaceChanged");
     }
 
     @Override
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
-        //To change body of implemented methods use File | Settings | File Templates.
-        boolean retry = true;
-        _loopThread.setRunning(false);
-
-        while (retry) {
-            try {
-                // ожидание завершение потока
-                _loopThread.join();
-                retry = false;
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-
-            }
-        }
-       // Log.d("GameViewSurface", "surfaceDestroyed");
+        Stop();
+       Log.d("GameViewSurface", "surfaceDestroyed");
     }
 }

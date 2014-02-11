@@ -1,86 +1,63 @@
 package com.example.snakeKirson;
 
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.*;
+import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.view.View;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 26.11.13
- * Time: 10:15
+ * Date: 22.12.13
+ * Time: 11:10
  * To change this template use File | Settings | File Templates.
  */
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
+public class GameView extends View {
+    public Bitmap mBitmap;
+    public Canvas mCanvas;
+    public Paint paint, mBitmapPaint;
+    public Point canvasSize;
 
-//import towe.def.GameView.GameThread;
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.view.MotionEvent;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
+    public GameView(Context context, AttributeSet attrs) {
+        super(context, attrs);
 
-public class GameView extends SurfaceView
-{
-    private Loop _loop;
+        Resources resources = context.getResources();
+        DisplayMetrics metrics = resources.getDisplayMetrics();
 
+        canvasSize = new Point((int)convertDpToPixel(800, context), (int)convertDpToPixel(380, context));
 
-    public GameView(Context context)        ///вот тут-то нужно упровлять вторым меню
-    {
-        super(context);
+        mBitmap = Bitmap.createBitmap(canvasSize.x, canvasSize.y, Bitmap.Config.ARGB_8888);
+        mCanvas = new Canvas(mBitmap);
+        mBitmapPaint = new Paint(Paint.DITHER_FLAG);
 
-        _loop = new Loop(this);
+        //определяем параметры кисти, которой будем рисовать сетку и атомы
+        //paint =new Paint();
+        //paint.setAntiAlias(true);
+        //paint.setDither(true);
+        //paint.setColor(0xffff0505);
+        //paint.setStrokeWidth(5f);
+        //paint.setStyle(Paint.Style.STROKE);
+        //paint.setStrokeJoin(Paint.Join.ROUND);
+        //paint.setStrokeCap(Paint.Cap.ROUND);
 
-        /*Рисуем все наши объекты и все все все*/
-        getHolder().addCallback(new SurfaceHolder.Callback()    ///получение области рисования
-        {
-            /*** Уничтожение области рисования */
-            public void surfaceDestroyed(SurfaceHolder holder)
-            {
-                boolean retry = true;
-                _loop.SetRunning(false);
-
-                while (retry)
-                {
-                    try
-                    {
-                        // ожидание завершение потока
-                        _loop.join();
-                        retry = false;
-                    }
-                    catch (InterruptedException e) { }
-                }
-            }
-
-            /** Создание области рисования */
-            public void surfaceCreated(SurfaceHolder holder)
-            {
-                _loop.SetRunning(true);
-                _loop.start();
-                holder.setSizeFromLayout();
-            }
-
-            /** Изменение области рисования */
-            public void surfaceChanged(SurfaceHolder holder, int format, int width, int height)
-            {
-                //holder.setFixedSize(5,5);
-            }
-        });
     }
 
-    /*public Apple createSprite(int resouce) {
-        Bitmap bmp = BitmapFactory.decodeResource(getResources(), resouce);
-        return new Apple(this, bmp);
-    } */
 
-    public void Stop() {
-        this._loop.SetRunning(false);
+    @Override
+    protected void onDraw(Canvas canvas) {
+        canvas.drawBitmap(mBitmap, 0, 0, mBitmapPaint);
     }
 
-    public void SetAction(Action action) {
-        this._loop.SetAction(action);
+    //переводим dp в пиксели
+    public float convertDpToPixel(float dp,Context context){
+        Resources resources = context.getResources();
+        DisplayMetrics metrics = resources.getDisplayMetrics();
+
+        return dp * (metrics.densityDpi/160f);
+
     }
+
+
 }
-

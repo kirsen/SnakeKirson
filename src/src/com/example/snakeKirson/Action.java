@@ -12,27 +12,33 @@ import android.graphics.Canvas;
  * To change this template use File | Settings | File Templates.
  */
 
-public class Action implements IGameObject {
-    protected Snake _snake;
-    protected Foods _foods;
+public class Action {
+    private List<IGameObject> _gameObjects;
 
-    public void SetFoods(Foods foods) {
-        this._foods = foods;
+    Action()
+    {
+        _gameObjects = new ArrayList<IGameObject>();
     }
 
-    public void SetSnake(Snake snake) {
-        this._snake = snake;
+    public void Add(IGameObject gameObject)
+    {
+        _gameObjects.add(gameObject);
     }
 
     public void Update() {
-        this._foods.Update();
-        this._snake.Update();
+        for(IGameObject gameObject : _gameObjects)
+        {
+            gameObject.Update();
+        }
+
     }
 
     public void Draw(Canvas canvas) {
-        this._foods.Draw(canvas);
-        this._snake.Draw(canvas);
+        for(IGameObject gameObject : _gameObjects)
+        {
+            gameObject.Draw(canvas);
+        }
+
     }
 
 }
-

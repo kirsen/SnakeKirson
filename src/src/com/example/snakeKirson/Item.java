@@ -1,7 +1,6 @@
 package com.example.snakeKirson;
 
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Point;
 
 import java.util.Map;
@@ -9,22 +8,20 @@ import java.util.Map;
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 15.10.13
- * Time: 15:04
+ * Date: 10.01.14
+ * Time: 15:02
  * To change this template use File | Settings | File Templates.
  */
-public class Item  implements ISnakePart {
+
+public class Item
+{
+    protected Field _field;
+    protected Queue _queue;
     protected Map<String, Bitmap> _resources;
-    protected GameView _gameView;
     protected Bitmap _image;
-    protected Point _pos = new Point(0,0);
+    protected Point _pos;
+    protected Point _posInFied;
+    protected Point _dirrection;
 
-    public void Update(Queue queue) {
-
-    }
-
-    public void Draw(Canvas canvas) {
-
-    }
 
 }

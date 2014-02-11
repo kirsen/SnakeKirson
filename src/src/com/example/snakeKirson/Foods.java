@@ -1,39 +1,52 @@
 package com.example.snakeKirson;
 
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-
 import java.util.*;
+import android.graphics.*;
 
 /**
  * Created with IntelliJ IDEA.
  * User: kira
- * Date: 15.10.13
- * Time: 15:04
+ * Date: 10.01.14
+ * Time: 15:01
  * To change this template use File | Settings | File Templates.
  */
-public class Foods {
+public class Foods implements IGameObject
+{
+//    protected Field _field;
+//    protected Point _pos;
     protected List<Food> _foods = new ArrayList<Food>();
-    protected Map<String, Bitmap> _resources;
-    protected GameView _gameView;
-    protected int _numberOfFood = 0;
-    protected int _width; // ширина поля
-    protected int _height;// высота поля
+//    protected Map<String, Bitmap> _resources;
+//    protected int _numberOfFood = 0;
 
-    public Foods(Map<String, Bitmap> resources, GameView gameView, int numberOfFood) {
-        this._resources = resources;
-        this._gameView = gameView;
-        this._numberOfFood = numberOfFood;
-        this._width = 400;//gameView.getWidth(); 400
-        this._height = 400;//gameView.getHeight();400
+    public Foods(/*Field field, Map<String, Bitmap> resources, int numberOfFood*/)
+    {
+//        _field = field;
+//        this._resources = resources;
+//        this._numberOfFood = numberOfFood;
+//        SetPosInFild(new Point(0,0));
 
-        Random rand = new Random();
-        for(int i=0; i< this._numberOfFood;i++)
-        {
-            int x = rand.nextInt(this._width);
-            int y = rand.nextInt(this._height);
-            this.AddFood(new Apple(x, y, this._gameView,this._resources.get("Apple")));
-        }
+//        for(int i=0; i< this._numberOfFood;i++)
+//        {
+//            Random rand = new Random();
+//
+//            boolean itemNotEmpty = true;
+//
+//            while (itemNotEmpty) {
+//                int potentialyX = rand.nextInt(_field.widthNumberItems - 1);
+//                int potentialyY = rand.nextInt(_field.heightNumberItems - 1);
+//
+//                if(field.GetObjects(potentialyX,potentialyY).isEmpty()) {
+////                x = 25;
+////                y = 0;
+////                    field.AddObject(potentialyX,potentialyY, this);
+////                    SetPosInFild(field.GetPoint(potentialyX,potentialyY));
+//                    this.AddFood(new Apple(field, this._resources.get("Apple"), potentialyX, potentialyY));
+//                    itemNotEmpty = false;
+//                }
+//
+//            }
+//
+//        }
 
     };
 
@@ -49,11 +62,52 @@ public class Foods {
         }
     }
 
-    public void AddFood(Food food) {
+    public void Add(Food food) {
         this._foods.add(food);
     }
 
-    public void RemoveFood(Food food) {
+    public void Remove(Food food) {
         this._foods.remove(food);
     }
+
+    public List<Food> GetFoodsList()
+    {
+        return _foods;
+    }
+
+    public boolean IntersectWith(IGameObject gameObject)
+    {
+        for(Food food: _foods)
+        {
+            if(food.GetPosInFild().equals(gameObject.GetPosInFild()))
+            {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+    public Iterator GetFoodIntersectedWith(IGameObject gameObject)
+    {
+        for( Iterator<Food> it = _foods.iterator(); it.hasNext();) {
+            Food food = it.next();
+            if(food.GetPosInFild().equals(gameObject.GetPosInFild()))
+            {
+                return it;
+            }
+
+         }
+        return null;
+    }
+
+    public Point GetPosInFild()
+    {
+        return null;
+    }
+    public void SetPosInFild(Point pos)
+    {
+//        _pos = pos;
+    }
+
 }
