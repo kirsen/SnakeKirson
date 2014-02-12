@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Point;
+import android.os.Looper;
 import android.util.Log;
 
 //import java.util.Objects;
@@ -35,7 +36,10 @@ public class GameLogic
         {
             Log.d("GameLogic", "HEAD of snake intersect with body of SNAKE!");
             _gameViewSurface.Stop();
-
+//            Looper.prepare();
+//            ShowDialogAfterCutingMyself();
+//            _activity.finish();
+//            Looper.loop();
 
         }
 
@@ -44,7 +48,14 @@ public class GameLogic
         if(headPosInField.x < 0 || headPosInField.x > _field.widthNumberItems || headPosInField.y < 0 || headPosInField.y > _field.heightNumberItems-1)
         {
             Log.d("GameLogic", "Have game object out of border!");
+
+            Looper.prepare();
+
+            ShowDialogAfterDieFromWall();
+
+            Looper.loop();
             _gameViewSurface.Stop();
+
 
         }
 
@@ -58,18 +69,41 @@ public class GameLogic
         }
     }
 
-    private void ShowDialogEndOfGame()
+    private void ShowDialogAfterDieFromWall()
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(_activity);
-        builder.setTitle("Важное сообщение!")
-                .setMessage("Покормите кота!")
+        builder.setTitle(Core.resources.getString(R.string.CaptionOfDialogAfterDieFromWall))
+                .setMessage(Core.resources.getString(R.string.MessageOfDialogAfterDieFromWall))
                 .setIcon(R.drawable.apple)
                 .setCancelable(false)
-                .setNegativeButton("ОК, иду на кухню",
+                .setNegativeButton(Core.resources.getString(R.string.OkMessageOfDialogAfterDieFromWall),
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.dismiss();
+//                                  _activity.finish();
+
+
+                            }
+                        });
+
+        AlertDialog alert = builder.create();
+        alert.show();
+
+    }
+
+    private void ShowDialogAfterCutingMyself()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(_activity);
+        builder.setTitle(Core.resources.getString(R.string.CaptionOfDialogAfterCutingMyself))
+                .setMessage(Core.resources.getString(R.string.MessageOfDialogAfterCutingMyself))
+                .setIcon(R.drawable.apple)
+                .setCancelable(false)
+                .setNegativeButton(Core.resources.getString(R.string.OkMessageOfDialogAfterCutingMyself),
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.cancel();
-                                _activity.finish();
+                                //_gameViewSurface.Stop();
+//                              _activity.finish();
 
                             }
                         });

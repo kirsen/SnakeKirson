@@ -64,14 +64,15 @@ public class GameViewSurface extends SurfaceView implements SurfaceHolder.Callba
         _loopThread.setRunning(false);
 
 //        while (retry) {
-//            try {
-//                // ожидание завершение потока
+            //try {
+                // ожидание завершение потока
 //                _loopThread.join();
+              //  _loopThread.stop();
 //                retry = false;
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//
-//            }
+            //} catch (InterruptedException e) {
+              //  e.printStackTrace();
+
+            //}
 //        }
         Log.d("GameViewSurface", "Stoped!");
     }

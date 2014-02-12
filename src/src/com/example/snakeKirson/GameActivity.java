@@ -1,7 +1,9 @@
 package com.example.snakeKirson;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -47,6 +49,7 @@ public class GameActivity extends Activity {
             }
         });
 
+
         Map<String, Bitmap> resources = new HashMap<String, Bitmap>();
 
         resources.put("Apple", BitmapFactory.decodeResource(getResources(), R.drawable.apple));
@@ -69,7 +72,7 @@ public class GameActivity extends Activity {
         Context context = getBaseContext();
         Core.Init(context);
 
-        field = new Field(21, (int)convertDpToPixel(800, context), (int)convertDpToPixel(380, context));
+        field = new Field(21, (int)convertDpToPixel(res.getInteger(R.integer.screenWidth), context), (int)convertDpToPixel(res.getInteger(R.integer.screenHeight), context));
         snake = new Snake(field, resources, res.getInteger(R.integer.startSnakeLength));
 
         foods = new Foods(new FoodFactory(field, resources));
