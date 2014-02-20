@@ -2,7 +2,7 @@
 <resources>
     <integer  name="screenWidth">950</integer>
     <integer  name="screenHeight">420</integer>
-    <integer  name="startNumberOfApple">3</integer>
+    <integer  name="startNumberOfApple">30</integer>
     <integer  name="startSnakeLength">15</integer>
     <integer  name="startSnakePosX">5</integer>
     <integer  name="startSnakePosY">5</integer>

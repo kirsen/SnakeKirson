@@ -7,11 +7,7 @@ import android.graphics.Point;
 import android.os.Looper;
 import android.util.Log;
 
-//import java.util.Objects;
 
-/**
- * Created by sogimu on 1/24/14.
- */
 public class GameLogic
 {
     private Snake _snake;
@@ -35,11 +31,10 @@ public class GameLogic
         if(_snake.GetBodyItems().IntersectWith((IGameObject)_snake.GetHead()) || _snake.GetBodyItems().IntersectWith((IGameObject)_snake.GetTail()) )
         {
             Log.d("GameLogic", "HEAD of snake intersect with body of SNAKE!");
-            _gameViewSurface.Stop();
-//            Looper.prepare();
-//            ShowDialogAfterCutingMyself();
-//            _activity.finish();
-//            Looper.loop();
+           // _gameViewSurface.Stop();
+            Looper.prepare();
+            ShowDialogAfterCutingMyself();
+            Looper.loop();
 
         }
 
@@ -50,14 +45,12 @@ public class GameLogic
             Log.d("GameLogic", "Have game object out of border!");
 
             Looper.prepare();
-
             ShowDialogAfterDieFromWall();
-
             Looper.loop();
-            _gameViewSurface.Stop();
-
+            //  _gameViewSurface.Stop();           // ya zakomentila
 
         }
+
 
         if(_foods.IntersectWith((IGameObject)_snake.GetHead()))
         {
@@ -80,7 +73,9 @@ public class GameLogic
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.dismiss();
-//                                  _activity.finish();
+                                _activity.getMainLooper().getThread().start();//just here
+                     //   _activity.finish();
+
 
 
                             }
@@ -88,6 +83,7 @@ public class GameLogic
 
         AlertDialog alert = builder.create();
         alert.show();
+
 
     }
 
@@ -101,14 +97,16 @@ public class GameLogic
                 .setNegativeButton(Core.resources.getString(R.string.OkMessageOfDialogAfterCutingMyself),
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                                //_gameViewSurface.Stop();
-//                              _activity.finish();
+                              //  dialog.cancel();
+                                dialog.dismiss();
+                                _activity.getMainLooper().getThread().start();//just here
+
 
                             }
                         });
         AlertDialog alert = builder.create();
         alert.show();
+
     }
 
 

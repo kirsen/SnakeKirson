@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">canvas</string>
+    <string name="app_name">SnakeKirson</string>
 
     <string name="CaptionOfDialogAfterCutingMyself">Огогошеньки!</string>
     <string name="MessageOfDialogAfterCutingMyself">Вы покусали себя и умерли!</string>
-    <string name="OkMessageOfDialogAfterCutingMyself">Выйти в главное меню</string>
+    <string name="OkMessageOfDialogAfterCutingMyself">Выйти в главное меню </string>
 
     <string name="CaptionOfDialogAfterDieFromWall">Огогошеньки!</string>
     <string name="MessageOfDialogAfterDieFromWall">Вы врезались в стену и умерли!</string>
